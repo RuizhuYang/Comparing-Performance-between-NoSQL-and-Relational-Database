@@ -1,19 +1,21 @@
-This restaurant menu web application provides a list of menu items within different restaurants. Users should have the ability to post, edit, and delete the restaurants and menu items.
+This project is to compare performance between NoSQL database MongoDB and relational database MySQL to insert, update, and select 100 to 1000000 tuples repectively.
 
-Run the server-side application
+## Run this application:
 
-Run the python file database_setup.py to initialize the database. After this, I can find a database named restaurantmenu.db in the current directory.
+In order to run select, update and delete modules in this project, you need to populate data to database first. Change the directory to code/mysql. Run citytable.java. After this, the MongoDB database and MySQL datdabase is ready to test.
 
-Run the python file operation.py to populate the database with some prepared restaurants and menu items(Optional).
+## Test performance of MySQL
 
-Now, run the python file webserver.py to run the web server. In your browser visit http://localhost:8080/restaurants to view the restaurant menu app. You should be able to view, add, edit and delete restuarants and menu items.
+To insert tuples into MySQL, change the directory to "code/mysql/src". Run "testinsert.java". After this, the time cost for insertion of different numbers of tuples will be shown on the console. 
 
-To stop the web server, stop running the websever.py python file.
+To update tuples in MySQL, change the directory to "code/mysql/src". Run "testupdate.java". After this, the time cost for update of different numbers of tuples will be shown on the console. 
 
-Funcionalities of this application
+To delete tuples in MySQL, change the directory to "code/mysql/src". Run "testdelete.java". After this, the time cost for delete of different numbers of tuples will be shown on the console. 
 
-To view the homepage of the application, visit http://localhost:8080/restaurants in your browser. You can view all created restaurants on this page. To click the name of one specific restaurant, you can view all menu items of this restuarant.
+## Test performance of MongoDB
 
-You can create your own restaurant by clicking the Add restaurant button on the webpage. The new restaurant you created will be shown on the homepage. Also, you can edit, and delete it. And you can also add menu items into the restaurant.
+To test the time cost of insert, update and delete data in MongoDB database, change the directory to "code/mongodb/mongodb/src". Run "test.java". After this, the time cost for insert, update and delete of different numbers of tuples will be shown on the console. 
 
-To add menu items, get into the webpage of one of restaurant, and click Add Menu Items button. After you add one menu itme, you can view it on the webpage of the specific restaurant. Also, you can edit, and delete it.
+## Test Result
+
+To view the result of this project, please see "gpeng_ryang_yyangReportupdate.pdf" for more details.
